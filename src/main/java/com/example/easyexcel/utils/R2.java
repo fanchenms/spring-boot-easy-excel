@@ -13,6 +13,8 @@ import java.util.Map;
  * @since 2023-02-25 12:35
  */
 public class R2<T> extends HashMap<String, Object> {
+    private static final long serialVersionUID = -4269644785681638135L;
+
     private static <T> R2<T> instance(int code, String message, T data) {
         R2<T> result = new R2<>();
         result.put("code", code);
